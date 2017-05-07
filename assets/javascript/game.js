@@ -19,13 +19,12 @@ document.onkeyup = function guess( event ) {
 	var guesses = 8;
 
 	for (var i = 0; i < randomWord.length; i++) {
-		if( randomWord.length = indexOf(guess ) ) {
+		if( randomWord.length === guess ) {
 			answerArray.push(guess); 
-			document.getElementById("blank").innerHTML = answerArray;
+
 		}
 
 		else {
-			document.getElementById("remaining").innerHTML = guesses;
 			guesses--;
 
 		}
