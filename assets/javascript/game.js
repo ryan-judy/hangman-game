@@ -20,16 +20,21 @@ document.onkeyup = function choice( event ) {
 				var ok = randomWord[i];
 			}
 
+			if (sweet = randomWord.indexOf(choice)) {
+				var gay = hiddenWord.replace("_", ok)
+			}
+
 
 			console.log(guess);
 			console.log(randomWord);
 			console.log(ok);
+			console.log(gay);
 
 
 			// hiddenWord.replace("_", correct);
 			
 		
-			document.getElementById("blank").innerHTML = choice;
+			document.getElementById("blank").innerHTML = gay;
 			
 			
 
