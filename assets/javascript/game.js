@@ -16,9 +16,10 @@ document.onkeyup = function choice( event ) {
 	var guess = randomWord.indexOf(choice);
 
 		if( guess >= 0) {
-			for (var i = 0; i < randomWord.length; i++) {
-				var ok = randomWord[i]
+			for (var i = 0; i <= randomWord.indexOf(choice); i++) {
+				var ok = randomWord[i];
 			}
+
 
 			console.log(guess);
 			console.log(randomWord);
